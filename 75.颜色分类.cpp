@@ -29,7 +29,7 @@ public:
         }
         nums.erase(nums.begin(), nums.end());
         nums.insert(nums.end(), count[0], 0);
-        nums.insert(nums.end(), count[1], 1);
+        nums.insert(nums.end(), count[1], 1); 
         nums.insert(nums.end(), count[2], 2);
     }
 };
