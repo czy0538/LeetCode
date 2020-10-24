@@ -43,7 +43,8 @@ public:
             first = first->next;
             second = second->next;
         }
-        second->next = second->next->next;
+        first = second->next;
+        second->next = first->next;
         ListNode *ans = dummy->next;
         delete dummy;
         return ans;
